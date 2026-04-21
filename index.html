@@ -12,26 +12,52 @@
             --white: #ffffff;
         }
 
-       <body>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background);
+            color: var(--primary-blue);
+            line-height: 1.6;
+        }
 
-    <header>
-        </header>
+        header {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--light-blue) 100%);
+            color: var(--white);
+            padding: 60px 20px; /* Reduced padding for a cleaner look */
+            text-align: center;
+        }
 
-    <div class="container">
-        <div class="content-box">
-            <img src="bros.jpg" alt="Kyle and Steve at Bipolar Bros event" style="width: 100%; max-width: 800px; border-radius: 8px; margin-bottom: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-            
-            <h2 style="font-size: 2.2rem; color: var(--primary-blue);">Promoting Awareness. Creating Safe Spaces.</h2>
-            
-            <p class="mission">
-                Founded by <strong>Kyle Fournier</strong> and <strong>Steve Griffith</strong>, Bipolar Bros is a public speaking initiative dedicated to helping men navigate mental illness through shared experiences and proven coping mechanisms.
-            </p>
-            
-            <p style="font-style: italic; opacity: 0.8;">Our official website is currently under construction.</p>
-            
-            <a href="mailto:kylecastatx@gmail.com" class="btn">Get In Touch</a>
-        </div>
-    </div>
+        .container {
+            max-width: 1000px; /* Slightly wider to accommodate the bigger pic */
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .content-box {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-top: -40px;
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--light-blue);
+            color: var(--white);
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: transform 0.2s ease;
+        }
+
+        .btn:hover { transform: scale(1.05); }
+
+        .mission { margin: 40px 0; font-size: 1.2rem; color: #444; }
 
         footer {
             text-align: center;
@@ -44,18 +70,20 @@
 <body>
 
     <header>
-        <h1>Bipolar Bros</h1>
-        <p class="slogan">Men. Mental Health. Real Conversations.</p>
-    </header>
+        </header>
 
     <div class="container">
-<div class="content-box">
-    <img src="bros.jpg" alt="Kyle and Steve" style="width: 100%; max-width: 500px; border-radius: 8px; margin-bottom: 20px; border: 4px solid var(--background);">
-    <h2>Promoting Awareness. Creating Safe Spaces.</h2>
+        <div class="content-box">
+            <img src="bros.jpg" alt="Kyle and Steve at Bipolar Bros event" style="width: 100%; max-width: 850px; border-radius: 8px; margin-bottom: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
+            
+            <h2 style="font-size: 2.2rem;">Promoting Awareness. Creating Safe Spaces.</h2>
+            
             <p class="mission">
                 Founded by <strong>Kyle Fournier</strong> and <strong>Steve Griffith</strong>, Bipolar Bros is a public speaking initiative dedicated to helping men navigate mental illness through shared experiences and proven coping mechanisms.
             </p>
-            <p>Our official website is currently under construction.</p>
+            
+            <p style="font-style: italic; opacity: 0.8;">Our official website is currently under construction.</p>
+            
             <a href="mailto:kylecastatx@gmail.com" class="btn">Get In Touch</a>
         </div>
     </div>
