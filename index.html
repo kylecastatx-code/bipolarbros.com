@@ -11,7 +11,7 @@
         nav { background: var(--primary-blue); padding: 1rem 0; text-align: center; position: sticky; top: 0; z-index: 1000; }
         nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; font-size: 1.1rem; }
         .dropdown { display: inline-block; position: relative; }
-        .dropdown-content { display: none; position: absolute; background: white; min-width: 200px; box-shadow: 0 8px 16px rgba(0,0,0,0.1); z-index: 1; text-align: left; border-radius: 4px; margin-top: 5px; }
+        .dropdown-content { display: none; position: absolute; background: white; min-width: 220px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); z-index: 1; text-align: left; border-radius: 4px; margin-top: 5px; }
         .dropdown-content a { color: var(--primary-blue); padding: 12px 16px; display: block; margin: 0; border-bottom: 1px solid #eee; }
         .dropdown:hover .dropdown-content { display: block; }
 
@@ -27,11 +27,13 @@
         .btn { background: var(--primary-blue); color: white; padding: 15px 35px; text-decoration: none; border-radius: 5px; display: inline-block; font-weight: bold; margin: 10px; transition: 0.3s; }
         .btn:hover { background: var(--light-blue); transform: translateY(-2px); }
         .btn-outline { background: transparent; border: 2px solid var(--primary-blue); color: var(--primary-blue); }
-        
-        footer { text-align: center; padding: 60px 40px; color: #777; }
+        .btn-outline:hover { background: var(--primary-blue); color: white; }
+
+        footer { text-align: center; padding: 60px 40px; color: #777; font-size: 0.9rem; }
     </style>
 </head>
 <body>
+
     <nav>
         <a href="index.html">Home</a>
         <a href="blog.html">Blog</a>
@@ -46,19 +48,27 @@
         <a href="theinitiative.html">Initiative</a>
     </nav>
 
-    <header><img src="LogoWave.png" alt="Bipolar Bros Logo" class="logo"></header>
+    <header>
+        <img src="LogoWave.png" alt="Bipolar Bros Logo" class="logo">
+    </header>
 
     <div class="container">
         <div class="content-box">
             <h1>Promoting Awareness.</h1>
             <h2>Creating Safe Spaces.</h2>
-            <p class="description">Founded by Kyle Fournier and Steve Griffith, Bipolar Bros is a public speaking initiative dedicated to helping men navigate mental illness through shared experiences and proven coping mechanisms.</p>
+            <p class="description">
+                Founded by <strong>Kyle Fournier</strong> and <strong>Steve Griffith</strong>, Bipolar Bros is a public speaking initiative dedicated to helping men navigate mental illness through shared experiences and proven coping mechanisms.
+            </p>
             <div class="btn-container">
                 <a href="blog.html" class="btn">Read the Blog</a>
                 <a href="mailto:kylecastatx@gmail.com" class="btn btn-outline">Contact Us</a>
             </div>
         </div>
     </div>
-    <footer><p>&copy; 2026 Bipolar Bros. All rights reserved.</p></footer>
+
+    <footer>
+        <p>&copy; 2026 Bipolar Bros. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
