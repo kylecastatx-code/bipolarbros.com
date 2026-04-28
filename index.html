@@ -3,86 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bipolar Bros | Men. Mental Health. Real Conversations.</title>
+    <title>Bipolar Bros | Safe Spaces for Men's Mental Health</title>
     <style>
-        :root {
-            --primary-blue: #1a3a5f;
-            --light-blue: #0077b6;
-            --background: #f4f7f9;
-            --white: #ffffff;
-        }
+        :root { --primary-blue: #003366; --light-blue: #00aaff; --white: #ffffff; --bg: #f4f7f6; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background: var(--bg); color: #333; line-height: 1.6; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Navigation & Dropdown */
+        nav { background: var(--primary-blue); padding: 1rem 0; text-align: center; sticky: top; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
+        .dropdown { display: inline-block; position: relative; }
+        .dropdown-content { display: none; position: absolute; background: white; min-width: 200px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); z-index: 1; text-align: left; border-radius: 4px; }
+        .dropdown-content a { color: var(--primary-blue); padding: 12px 16px; display: block; margin: 0; }
+        .dropdown:hover .dropdown-content { display: block; }
+        .dropdown-content a:hover { background: #eee; }
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--background);
-            color: var(--primary-blue);
-            line-height: 1.6;
-        }
-
-        nav {
-            background: var(--primary-blue);
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav a {
-            color: var(--white);
-            text-decoration: none;
-            font-weight: bold;
-            margin: 0 20px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        nav a:hover { color: #8ecae6; }
-
-        header {
-            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--light-blue) 100%);
-            color: var(--white);
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        .content-box {
-            background: var(--white);
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            margin-top: -60px;
-            text-align: center;
-        }
-
-        .btn {
-            display: inline-block;
-            background: var(--light-blue);
-            color: var(--white);
-            padding: 15px 35px;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            margin: 10px;
-            transition: transform 0.2s ease;
-        }
-
-        .btn-outline {
-            background: transparent;
-            border: 2px solid var(--light-blue);
-            color: var(--light-blue);
-        }
-
-        .btn:hover { transform: scale(1.05); }
-
-        .mission { margin: 40px 0; font-size: 1.3rem; color: #444; }
-
-        footer { text-align: center; padding: 60px 40px; font-size: 0.9rem; opacity: 0.7; }
+        header { background: var(--white); padding: 60px 20px; text-align: center; border-bottom: 2px solid #eee; }
+        .logo { max-width: 500px; width: 100%; height: auto; }
+        .content-box { background: white; padding: 40px; border-radius: 12px; margin-top: -30px; text-align: center; }
+        .btn { background: var(--primary-blue); color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; display: inline-block; font-weight: bold; margin: 10px; }
+        .btn-outline { background: transparent; border: 2px solid var(--primary-blue); color: var(--primary-blue); }
+        footer { text-align: center; padding: 40px; color: #777; font-size: 0.9rem; }
     </style>
 </head>
 <body>
@@ -90,31 +31,32 @@
     <nav>
         <a href="index.html">Home</a>
         <a href="blog.html">Blog</a>
-        <a href="gallery.html">Gallery</a>
+        <div class="dropdown">
+            <a href="gallery.html">Gallery ▾</a>
+            <div class="dropdown-content">
+                <a href="gallery.html#whitehouse">Steve's Whitehouse Trip</a>
+                <a href="gallery.html#toastmasters">Kyle's Toastmasters Journey</a>
+            </div>
+        </div>
     </nav>
 
-    <header></header>
+    <header>
+        <img src="LogoWave.png" alt="Bipolar Bros Logo" class="logo">
+    </header>
 
     <div class="container">
         <div class="content-box">
-            <img src="bros.jpg" alt="Kyle and Steve" style="width: 100%; max-width: 850px; border-radius: 8px; margin-bottom: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-            
-            <h2 style="font-size: 2.5rem;">Promoting Awareness. Creating Safe Spaces.</h2>
-            
-            <p class="mission">
+            <h2 style="font-size: 2.5rem; color: var(--primary-blue);">Promoting Awareness. <br>Creating Safe Spaces.</h2>
+            <p style="font-size: 1.2rem; max-width: 800px; margin: 20px auto;">
                 Founded by <strong>Kyle Fournier</strong> and <strong>Steve Griffith</strong>, Bipolar Bros is a public speaking initiative dedicated to helping men navigate mental illness through shared experiences and proven coping mechanisms.
             </p>
-            
-            <div style="margin-top: 20px;">
+            <div style="margin-top: 30px;">
                 <a href="blog.html" class="btn">Read the Blog</a>
-                <a href="gallery.html" class="btn btn-outline">View Gallery</a>
+                <a href="gallery.html" class="btn btn-outline">Explore the Gallery</a>
             </div>
         </div>
     </div>
 
-    <footer>
-        &copy; 2026 Bipolar Bros. All rights reserved.
-    </footer>
-
+    <footer>&copy; 2026 Bipolar Bros. All rights reserved.</footer>
 </body>
 </html>
