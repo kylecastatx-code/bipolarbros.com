@@ -1,1 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Initiative | Bipolar Bros</title>
+    <style>
+        :root { --primary-blue: #003366; --light-blue: #00aaff; --white: #ffffff; --bg: #f4f7f6; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background: var(--bg); color: #333; line-height: 1.8; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+        
+        nav { background: var(--primary-blue); padding: 1rem 0; text-align: center; position: sticky; top: 0; z-index: 1000; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; font-size: 1.1rem; }
+        .dropdown { display: inline-block; position: relative; }
+        .dropdown-content { display: none; position: absolute; background: white; min-width: 220px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); z-index: 1; text-align: left; border-radius: 4px; margin-top: 5px; }
+        .dropdown-content a { color: var(--primary-blue); padding: 12px 16px; display: block; margin: 0; border-bottom: 1px solid #eee; }
+        .dropdown:hover .dropdown-content { display: block; }
+        
+        .page-header { text-align: center; margin-bottom: 60px; }
+        .page-header h1 { color: var(--primary-blue); font-size: 3rem; margin-bottom: 10px; }
+        .page-header p { font-size: 1.3rem; max-width: 800px; margin: 0 auto; color: #555; }
 
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .service-card { background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; transition: 0.3s; border-top: 5px solid var(--primary-blue); }
+        .service-card:hover { transform: translateY(-5px); box-shadow: 0 8px 30px rgba(0,0,0,0.1); border-top-color: var(--light-blue); }
+
+        .service-icon { width: 120px; height: 120px; object-fit: cover; border-radius: 50%; margin-bottom: 20px; border: 3px solid #f0f4f8; }
+        .service-card h2 { color: var(--primary-blue); margin-bottom: 5px; }
+        .hook { color: var(--light-blue); font-weight: bold; font-style: italic; margin-bottom: 15px; display: block; }
+        .service-card p { font-size: 1.05rem; text-align: left; color: #444; }
+
+        footer { text-align: center; padding: 60px 40px; color: #777; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <div class="dropdown">
+            <a href="gallery.html">Gallery ▾</a>
+            <div class="dropdown-content">
+                <a href="gallery.html#whitehouse">Steve's Whitehouse Trip</a>
+                <a href="gallery.html#toastmasters">Kyle's Toastmasters Journey</a>
+            </div>
+        </div>
+        <a href="aboutthebros.html">About</a>
+        <a href="theinitiative.html">Initiative</a>
+    </nav>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>The Initiative</h1>
+            <p>Destigmatizing mental illness through education, storytelling, and community.</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="images/Seminars.jpg" class="service-icon" alt="Seminars">
+                <h2>Seminars</h2>
+                <span class="hook">High-impact education.</span>
+                <p>Large-format, immersive educational sessions designed to destigmatize Bipolar Disorder. We combine academic data with authentic storytelling to redefine what resilience looks like in the corporate and academic world. We move beyond "awareness" and into actionable understanding of mental health as a core component of human capital.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="images/workshops.jpg" class="service-icon" alt="Workshops">
+                <h2>Workshops</h2>
+                <span class="hook">Hands-on blueprinting.</span>
+                <p>Action-oriented, interactive sessions where theory meets practice. Participants are guided through hands-on exercises focused on emotional intelligence, coping mechanisms, and communication blueprints for high-stress environments. Far beyond simple lectures, our workshops are labs for building mental fortitude.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="images/speaking.jpg" class="service-icon" alt="Speaking">
+                <h2>Speaking & Podcasting</h2>
+                <span class="hook">Radical honesty at scale.</span>
+                <p>Dynamic keynote addresses and podcast appearances that deliver high-impact insights. We tackle the hardest conversations - suicide, addiction, and the weight of masculinity - with radical honesty. We inspire teams and listeners to bridge the gap between mental health and peak performance.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="images/coaching.jpg" class="service-icon" alt="Coaching">
+                <h2>Performance Coaching</h2>
+                <span class="hook">Strategic personal growth.</span>
+                <p>Private, confidential sessions focused on personal and professional growth. Whether you are navigating a new diagnosis or seeking to build resilience in your career, our unique dual-perspective coaching helps you develop sustainable mental systems. We focus on the "Structural Editing" of your life's narrative.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="images/community.jpg" class="service-icon" alt="Community">
+                <h2>Community</h2>
+                <span class="hook">A safe harbor for the journey.</span>
+                <p>A dedicated space for vulnerable conversation. Through curated groups, well-moderated online servers, and social events, we connect men with shared experiences to foster lifelong camaraderie. By sharing the weight, we ensure no man has to navigate his mental health journey in isolation.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Bipolar Bros. All rights reserved.</p>
+        <p>Contact: <a href="mailto:kylecastatx@gmail.com" style="color: var(--primary-blue);">kylecastatx@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>
