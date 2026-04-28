@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bipolar Bros | Safe Spaces for Men's Mental Health</title>
+    <title>Bipolar Bros | Home</title>
     <style>
         :root { --primary-blue: #003366; --light-blue: #00aaff; --white: #ffffff; --bg: #f4f7f6; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background: var(--bg); color: #333; line-height: 1.6; }
         .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
         
-        /* Navigation & Dropdown Styling */
+        /* Navigation & Dropdown */
         nav { background: var(--primary-blue); padding: 1rem 0; text-align: center; position: sticky; top: 0; z-index: 1000; }
         nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; font-size: 1.1rem; }
         nav a:hover { color: var(--light-blue); }
@@ -21,11 +21,18 @@
         .dropdown:hover .dropdown-content { display: block; }
         .dropdown-content a:hover { background: #f0f4f8; color: var(--light-blue); }
 
-        /* Header & Hero */
+        /* Hero Section */
         header { background: var(--white); padding: 60px 20px; text-align: center; border-bottom: 2px solid #eee; }
         .logo { max-width: 550px; width: 100%; height: auto; }
         
         .content-box { background: white; padding: 50px; border-radius: 15px; margin-top: -40px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        h1 { font-size: 2.8rem; color: var(--primary-blue); margin-bottom: 10px; }
+        h2 { font-size: 2.8rem; color: var(--light-blue); margin-top: 0; }
+        
+        .description { font-size: 1.25rem; max-width: 850px; margin: 30px auto; color: #555; }
+
+        /* Buttons */
+        .btn-container { margin-top: 40px; }
         .btn { background: var(--primary-blue); color: white; padding: 15px 35px; text-decoration: none; border-radius: 5px; display: inline-block; font-weight: bold; margin: 10px; transition: 0.3s; }
         .btn:hover { background: var(--light-blue); transform: translateY(-2px); }
         .btn-outline { background: transparent; border: 2px solid var(--primary-blue); color: var(--primary-blue); }
@@ -50,21 +57,21 @@
     </nav>
 
     <header>
-        <img src="LogoWave.png" alt="Bipolar Bros - Safe Spaces for Men's Mental Health" class="logo">
+        <img src="LogoWave.png" alt="Bipolar Bros Logo" class="logo">
     </header>
 
     <div class="container">
         <div class="content-box">
-            <h2 style="font-size: 2.8rem; color: var(--primary-blue); margin-bottom: 10px;">Promoting Awareness.</h2>
-            <h2 style="font-size: 2.8rem; color: var(--light-blue); margin-top: 0;">Creating Safe Spaces.</h2>
+            <h1>Promoting Awareness.</h1>
+            <h2>Creating Safe Spaces.</h2>
             
-            <p style="font-size: 1.25rem; max-width: 850px; margin: 30px auto; color: #555;">
+            <p class="description">
                 Founded by <strong>Kyle Fournier</strong> and <strong>Steve Griffith</strong>, Bipolar Bros is a public speaking initiative dedicated to helping men navigate mental illness through shared experiences and proven coping mechanisms.
             </p>
             
-            <div style="margin-top: 40px;">
-                <a href="aboutthebros.html" class="btn">Meet the Bros</a>
-                <a href="gallery.html" class="btn btn-outline">See the Journey</a>
+            <div class="btn-container">
+                <a href="blog.html" class="btn">Read the Blog</a>
+                <a href="mailto:kylecastatx@gmail.com" class="btn btn-outline">Contact Us</a>
             </div>
         </div>
     </div>
