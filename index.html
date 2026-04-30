@@ -15,7 +15,6 @@
             background: var(--bg); 
             padding: 20px 20px; 
             text-align: center; 
-            border-bottom: none; 
         }
         .logo { max-width: 500px; width: 100%; height: auto; }
         
@@ -37,10 +36,22 @@
         h2 { font-size: 2.8rem; color: var(--light-blue); margin-top: 0; }
         .description { font-size: 1.2rem; max-width: 800px; margin: 30px auto; color: #555; }
 
-        .btn { background: var(--primary-blue); color: white; padding: 15px 35px; text-decoration: none; border-radius: 5px; display: inline-block; font-weight: bold; margin: 10px; transition: 0.3s; }
-        .btn:hover { background: var(--light-blue); transform: translateY(-2px); }
-        .btn-outline { background: transparent; border: 2px solid var(--primary-blue); color: var(--primary-blue); }
-        .btn-outline:hover { background: var(--primary-blue); color: white; }
+        .btn { 
+            display: inline-block;
+            padding: 15px 35px; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            font-weight: bold; 
+            transition: 0.3s;
+            border: 2px solid var(--primary-blue);
+            color: var(--primary-blue);
+            background: transparent;
+        }
+        .btn:hover { 
+            background: var(--primary-blue); 
+            color: white;
+            transform: translateY(-2px); 
+        }
 
         footer { text-align: center; padding: 60px 40px; color: #777; font-size: 0.9rem; }
     </style>
@@ -67,8 +78,7 @@
                 Founded by <strong>Kyle Fournier</strong> and <strong>Steve Griffith</strong>, Bipolar Bros is a public speaking initiative dedicated to helping men navigate mental illness through shared experiences and proven coping mechanisms.
             </p>
             <div class="btn-container">
-                <a href="blog.html" class="btn">Read the Blog</a>
-                <a href="mailto:kylecastatx@gmail.com" class="btn btn-outline">Contact Us</a>
+                <a href="mailto:kylecastatx@gmail.com" class="btn">Contact Us</a>
             </div>
         </div>
     </div>
