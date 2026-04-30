@@ -11,9 +11,6 @@
         
         nav { background: var(--primary-blue); padding: 1rem 0; text-align: center; position: sticky; top: 0; z-index: 1000; }
         nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; font-size: 1.1rem; }
-        .dropdown { display: inline-block; position: relative; }
-        .dropdown-content { display: none; position: absolute; background: white; min-width: 220px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); z-index: 1; text-align: left; border-radius: 4px; margin-top: 5px; }
-        .dropdown:hover .dropdown-content { display: block; }
 
         .page-header { text-align: center; margin-bottom: 60px; }
         .page-header h1 { color: var(--primary-blue); font-size: 3rem; margin-bottom: 10px; }
@@ -36,13 +33,7 @@
     <nav>
         <a href="index.html">Home</a>
         <a href="blog.html">Blog</a>
-        <div class="dropdown">
-            <a href="gallery.html">Gallery ▾</a>
-            <div class="dropdown-content">
-                <a href="gallery.html#whitehouse">Steve's Whitehouse Trip</a>
-                <a href="gallery.html#toastmasters">Kyle's Toastmasters Journey</a>
-            </div>
-        </div>
+        <a href="gallery.html">Gallery</a>
         <a href="aboutthebros.html">About</a>
         <a href="theinitiative.html">Initiative</a>
     </nav>
