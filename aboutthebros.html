@@ -11,16 +11,17 @@
         nav { background: var(--primary-blue); padding: 1rem 0; text-align: center; position: sticky; top: 0; z-index: 1000; }
         nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; font-size: 1.1rem; }
 
-        .about-header { background: linear-gradient(rgba(0,51,102,0.8), rgba(0,51,102,0.8)), url('bros.jpg'); background-size: cover; background-position: center; color: white; padding: 100px 20px; text-align: center; }
+        /* Unified Header Style */
+        .header { background: var(--primary-blue); color: white; padding: 60px 20px; text-align: center; }
+        
         .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
         
-        .profile-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: -80px; }
+        .profile-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: -100px; }
         .profile-card { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center; }
         .profile-img { width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 5px solid var(--white); box-shadow: 0 5px 15px rgba(0,0,0,0.1); margin-bottom: 20px; }
         
-        h2 { color: var(--primary-blue); margin-top: 0; }
+        h2 { color: var(--primary-blue); margin-top: 0; font-size: 2rem; }
         .bio { text-align: left; font-size: 1.05rem; color: #555; }
-        .tagline { color: var(--light-blue); font-weight: bold; margin-bottom: 20px; display: block; }
         
         footer { text-align: center; padding: 40px; color: #777; font-size: 0.9rem; }
 
@@ -39,32 +40,30 @@
     <a href="theinitiative.html">Initiative</a>
 </nav>
 
-<header class="about-header">
+<header class="header">
     <h1>Meet the Bros</h1>
     <p>Two lifelong friends navigating the highs and lows together.</p>
 </header>
 
 <div class="container">
     <div class="profile-grid">
-        <!-- Kyle's Profile -->
-        <div class="profile-card">
-            <img src="aboutuskyle.jpg" alt="Kyle" class="profile-img">
-            <h2>Kyle</h2>
-            <span class="tagline">Bipolar Bro #1</span>
-            <div class="bio">
-                <p>Kyle is a 37 year old writer diagnosed with Bipolar Type 2. Kyle lives in Bali, Indonesia for the freedom and lifestyle it so generously offers him. He makes his living primarily through ghostwriting, but has found that his greatest passion lies in speaking - especially podcasting.</p>
-                <p>Kyle’s greatest interests include meditation, psychology, and reading. He is obsessed with learning about people in general and has the dangerous tendency to diagnose those around him regardless of his utter lack of psychology credentials.</p>
-            </div>
-        </div>
-
-        <!-- Steve's Profile -->
+        <!-- Steve's Profile (Bipolar Type 1) -->
         <div class="profile-card">
             <img src="aboutussteve.jpg" alt="Steve" class="profile-img">
             <h2>Steve</h2>
-            <span class="tagline">Bipolar Bro #2</span>
             <div class="bio">
                 <p>Steve is a 38 year old artist diagnosed with Bipolar Type 1. Steve lives in his home state of Rhode Island where he can focus on his work while also remaining close to his family. He is a glassblower, entrepreneur, and father of two cute and surprisingly well-behaved children.</p>
                 <p>Steve’s main hobby is collectibles - acquiring, admiring, and re-selling. He has become an expert in the realms of Hot Wheels and Pokemon cards - two brands of collectibles that allow him to explore his own passions while connecting with his kids.</p>
+            </div>
+        </div>
+
+        <!-- Kyle's Profile (Bipolar Type 2) -->
+        <div class="profile-card">
+            <img src="aboutuskyle.jpg" alt="Kyle" class="profile-img">
+            <h2>Kyle</h2>
+            <div class="bio">
+                <p>Kyle is a 37 year old writer diagnosed with Bipolar Type 2. Kyle lives in Bali, Indonesia for the freedom and lifestyle it so generously offers him. He makes his living primarily through ghostwriting, but has found that his greatest passion lies in speaking - especially podcasting.</p>
+                <p>Kyle’s greatest interests include meditation, psychology, and reading. He is obsessed with learning about people in general and has the dangerous tendency to diagnose those around him regardless of his utter lack of psychology credentials.</p>
             </div>
         </div>
     </div>
